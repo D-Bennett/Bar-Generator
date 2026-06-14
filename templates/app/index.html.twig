@@ -3,4 +3,10 @@
 {% block body %}
     <h1>Bars</h1>
 
+    {% for barImage in barImages %}
+        <div style="padding: 6px;">
+            <img src="{{ barImage }}">
+        </div>
+    {% endfor %}
+
 {% endblock %}
